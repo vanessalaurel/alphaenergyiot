@@ -1,26 +1,51 @@
 import React, { useState } from "react";
 import im2 from "../Assets/Alpha Energy IoT Inverted Color 2400x1800 2.png";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
-  const handleclick = () => {
+  const handlerclick = () => {
     setActive(!active);
   };
+  const handleClick = () => {
+    handlerclick();
+    navigate("/");
+  };
+  const navigate = useNavigate();
   return (
     <div className="text-black bg-white h-[71px] flex">
       <img src={im2} className="w-[15%] ml-[7%] -mt-[1%] h-[200%]" alt="" />
       <div className="flex text-black ml-[6%] mt-[3.5%] ">
         <h1
           className="mx-10 font-light font-body hover:underline "
-          onClick={handleclick}
+          onClick={handleClick}
           style={{ color: active ? "black" : "gray" }}
         >
           Home
         </h1>
-        <h1 className="mx-10 font-light font-body hover:underline ">About</h1>
+        <h1
+          className="mx-10 font-light font-body hover:underline "
+          onClick={() => {
+            navigate("/about");
+          }}
+        >
+          About
+        </h1>
         <h1 className="mx-10 font-light font-body hover:underline">Packages</h1>
-        <h1 className="mx-10 font-light font-body hover:underline">Join us</h1>
-        <h1 className="mx-10 font-light font-body hover:underline">
+        <h1
+          className="mx-10 font-light font-body hover:underline"
+          onClick={() => {
+            navigate("/join");
+          }}
+        >
+          Join us
+        </h1>
+        <h1
+          className="mx-10 font-light font-body hover:underline"
+          onClick={() => {
+            navigate("/contact");
+          }}
+        >
           Contact us
         </h1>
       </div>

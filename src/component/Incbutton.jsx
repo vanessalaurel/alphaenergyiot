@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 
-const Incbutton = ({ minVal = 0, maxVal = 100 }) => {
+const Incbutton = ({ minVal = 1, maxVal = 100 }) => {
   const [count, setCount] = useState(minVal);
   const Increment = () => {
     if (count < maxVal) {
@@ -14,12 +14,18 @@ const Incbutton = ({ minVal = 0, maxVal = 100 }) => {
   };
   return (
     <div>
-      <div classname=" bg-white flex">
-        <button className="bg-slate-300 text-black" onClick={Increment}>
+      <div className=" bg-white flex">
+        <button
+          className="bg-slate-200 rounded-md w-6 text-black "
+          onClick={Increment}
+        >
           +
         </button>
-        <p className="text-black">{count}</p>
-        <button className="bg-slate-300 text-black" onClick={Decrement}>
+        <p className="text-black mx-3">{count}</p>
+        <button
+          className="bg-slate-200 rounded-md w-6 text-black "
+          onClick={Decrement}
+        >
           -
         </button>
       </div>

@@ -10,11 +10,13 @@ import bc from "../Assets/WhatsApp Image 2024-03-19 at 7.32.36 PM (1).jpeg";
 import bc2 from "../Assets/WhatsApp Image 2024-03-19 at 7.32.36 PM.jpeg";
 import bc3 from "../Assets/WhatsApp Image 2024-03-19 at 7.32.36 PM (2).jpeg";
 import { Typewriter } from "react-simple-typewriter";
+import Navbar from "./Navbar";
 
 const Home = () => {
   return (
     <div>
-      <div className=" bg-gradient-to-b from-slate-300  mt-[2%] w-[93%] rounded-3xl h-[400px] ml-[3.5%]">
+      <Navbar></Navbar>
+      <div className=" bg-gradient-to-b from-slate-300  mt-[10%] w-[93%] rounded-3xl h-[400px] ml-[3.5%]">
         <h1 className="text-6xl font-extrabold pt-[6%] pl-[3%]">
           Solar Beacons
         </h1>

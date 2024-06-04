@@ -1,39 +1,60 @@
 import React from "react";
 import Incbutton from "./Incbutton";
+import p3 from "../Assets/p3.jpeg";
 
 const Page3 = () => {
   return (
     <div>
-      <div>
-        <img
-          src={
-            "www.google.com/imgres?imgurl=https%3A%2F%2Fncube-digest.com%2Fwp-content%2Fuploads%2F2020%2F05%2FWhat-Are-Beacons.png&tbnid=5BIVOleTVY7yNM&vet=12ahUKEwjr1KK4_pSFAxX_WPUHHVmoBQQQMygQegUIARCRAQ..i&imgrefurl=https%3A%2F%2Fncube.com%2Fwhat-are-beacons-and-how-beacons-technology-works%2F&docid=d72_Ldzls5qm7M&w=1024&h=1024&q=beacon%20technology&ved=2ahUKEwjr1KK4_pSFAxX_WPUHHVmoBQQQMygQegUIARCRAQ"
-          }
-          alt=""
-        />
-        <div>
-          <h1>Package 3</h1>
-          <h1>SKU: 0016</h1>
-          <h1>HK$10,140.00</h1>
-          <h1>Quantity</h1>
-          <Incbutton minVal={1} />
-          <button>Add to cart</button>
-          <button>Buy</button>
+      <div className="mt-[-7%] ml-[5%] mb-[2%]">
+        <button className="mx-[0.5%] hover:underline text-sm font-extralight text">
+          Page 1
+        </button>
+        <button className="mx-[0.5%] hover:underline text-sm font-extralight">
+          Page 2
+        </button>
+        <button className="mx-[0.5%] hover:underline text-sm font-extralight font">
+          Page 3
+        </button>
+      </div>
+      <div classname="flex">
+        <img className=" ml-[4%] w-[50%] " src={p3} alt="" />
+        <div className=" text-black ml-[4%]">
+          <h1 className="text-4xl font-mono">Package 3</h1>
+          <h1 className="font-extralight">SKU: 0016</h1>
+          <h1 className="font-thin text-2xl mt-[4%]">HK$10,140.00</h1>
+          <h1 className="mt-[4%] font-thin">Quantity</h1>
+          <div className="mt-[2%]">
+            {" "}
+            <Incbutton minVal={1} />
+          </div>
+          <div className="mt-[5%] rounded-md text-center h-8 bg-teal-800">
+            <button className="  text-white py-1 font-extralight">
+              Add to cart
+            </button>
+          </div>
+          <div className="mt-[5%] rounded-md h-8 text-center bg-black">
+            <button className=" text-white  py-1 font-extralight ">Buy</button>
+          </div>
         </div>
       </div>
-      <div>
-        <h1>Package 3</h1>
-        <h1>
-          1. Personalized push content with AI referenced labels <br /> 2. No
-          privacy concerns due to the personalized information agreement needs
-          to be signed <br /> 3. Higher accuracy with monthly retrained AI model
-          <br /> 4. Customized business reports for business analytics Price
-          (per month): 10,140 HKD (per project, 10k users) + 50 HKD (per beacon)
-        </h1>
-      </div>
-      <div>
-        <h1>RETURN AND REFUND POLICY</h1>
-        <h1>Within 1 week after purchasings</h1>
+      <div className="flex ml-[4%] mt-[2%]">
+        <div>
+          <h1 className="text-xl">Package 3</h1>
+          <h1 className="font-extralight">
+            1. Personalized push content with AI referenced labels <br /> 2. No
+            privacy concerns due to the personalized information agreement needs
+            to be signed <br /> 3. Higher accuracy with monthly retrained AI
+            model
+            <br /> 4. Customized business reports for business analytics Price
+            (per month): 10,140 HKD (per project, 10k users) + 50 HKD (per
+            beacon)
+          </h1>
+        </div>
+
+        <div className=" ml-[16%] mt-[0%]">
+          <h1 className=" text-xl font-light">RETURN AND REFUND POLICY</h1>
+          <h1 className=" font-extralight">Within 1 week after purchasings</h1>
+        </div>
       </div>
     </div>
   );

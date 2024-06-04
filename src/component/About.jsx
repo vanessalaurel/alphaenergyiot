@@ -6,10 +6,12 @@ import f3 from "../Assets/WhatsApp Image 2024-03-14 at 12.13.43 PM.jpeg";
 import f4 from "../Assets/WhatsApp Image 2024-03-14 at 12.13.43 PM (1).jpeg";
 import f5 from "../Assets/WhatsApp Image 2024-03-14 at 12.05.01 PM.jpeg";
 import f6 from "../Assets/WhatsApp Image 2024-03-14 at 12.03.24 PM.jpeg";
+import Navbar from "./Navbar";
 
 const about = () => {
   return (
     <div>
+      <Navbar></Navbar>
       <h1 className=" mt-[10%] text-center text-7xl font-body text-slate-700">
         About Us
       </h1>
